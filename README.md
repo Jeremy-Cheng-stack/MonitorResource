@@ -35,7 +35,7 @@ Number of cores: 4
 Total CPU use = 0.42 %
 ---------------------------------------------------
 ```
-
+Example program output
 
 Functions documentation:
 
