@@ -6,6 +6,37 @@ Overview of the program:
 The program displays some important information about the system using command line. Specifically, the program first displays some basic information such as system name, machine name, linux version, release, architecture of the computer. After, the program displays the users that are connected to the machine, along with device name tty and the hostname. Furthermore , the program displays
 Information about the memory usage(RAM) in GB. The program also displays CPU utilization and how many processors the computer has. Memory information and core information can enhanced with graphic UI to help better understand the data presented.
 
+```
+Number of samples: 10 -- every 1 sec
+---------------------------------------------------
+### System Information ###
+ System Name:  Linux
+ Machine Name: iits-b473-07
+ Version:  #40~20.04.1-Ubuntu SMP Mon Mar 7 09:18:32 UTC 2022
+ Release:  5.13.0-35-generic
+ Architecture:  x86_64
+---------------------------------------------------
+### Sessions/Users ###
+---------------------------------------------------
+### Memory ### (Phys.Used/Tot -- Virtual Used/Tot)
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+ 3.78 GB / 15.36 GB  --  3.78 GB / 16.32 GB
+
+---------------------------------------------------
+Number of cores: 4
+Total CPU use = 0.42 %
+---------------------------------------------------
+```
+
+
 Functions documentation:
 
 ```Void cores(int start, int amount, int g)```
