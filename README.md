@@ -8,7 +8,7 @@ Information about the memory usage(RAM) in GB. The program also displays CPU uti
 
 Functions documentation:
 
-**Void cores(int start, int amount, int g)**
+```Void cores(int start, int amount, int g)```
 
 The purpose of this function is for displaying core and CPU utilization information. There is optional graphics implementation that can be performed if the tag graphics has been used.
 
@@ -21,7 +21,7 @@ CPU util = (user +nice +system +irq + softirq +steal) / (user +nice +system+ irq
 
 This function takes in the parameter start, amount and g. The integer “start” indicates the value or amount of samples that needs to be taken indicated originally by the user. The integer “amount” is the amount of steps or iteration of displaying information, relating mostly to the graphics part. It is mostly for indexing how many spaces the cursor should move down. The integer “g” is the graphics checker, if it is 1 then graphics is on and if it is 0 graphics is off.
 	
-**Void sess()**
+```Void sess()```
 
 The purpose of this function is to obtain information about the users that needs to be documented. It is one time and access the utmp struct to do so.
 
@@ -34,7 +34,7 @@ The purpose of the function is to discover if the —user flag is used and to gi
 	int all -> if the —user flag was used or not
 	int iteration -> which iteration the system_info() loop is on since there is a special case for first run through (need to erase header)
 
-**Void memory_usage(int amount, int time, int g, int all)**
+```Void memory_usage(int amount, int time, int g, int all)```
 
 The purpose of the function is to find how much physical memory is being used and how many virtual memory is being used out of the total. The physical memory is just calculated with total Ram and virtual memory is calculated with Ram plus swap memory. Note that during conversion from bytes to GB, (1024*1024*1024) was used in conversion.
 
@@ -43,11 +43,11 @@ The purpose of the function is to find how much physical memory is being used an
 	int all -> if the —user flag was used or not
 	int g -> if the graphics tag has been used or not since it changes how the information is being displayed 
 
-**Void system_info()**
+```Void system_info()```
 
 The purpose of the function is to display some basic information of the machine beforehand that is important to every information being displayed. Displayed information includes system name, machine name, linux version, release, architecture of the computer.
 
-**Int main(int argc, char **argv)**
+```Int main(int argc, char **argv)```
 
 The main function is where the inputed command line is inspected for flag uses and notify the other functions on how to perform with which flags used. 
 
